@@ -22,13 +22,12 @@ public class OrgManagementController {
     public ResponseEntity<Response> getCorrelationsV3(@RequestParam("x-api-token") String token,
                                                       @RequestHeader("x-api-key") String apiKey) {
         String uniqueIdentifier = "[" + UUID.randomUUID() + "]";
-        logger.info("{} | ********************************* START *********************************", uniqueIdentifier);
+        logger.info("{} | ********************************* START -/getName *********************************", uniqueIdentifier);
 
         HttpHeaders headers = new HttpHeaders();
         headers.add(HttpHeaders.CACHE_CONTROL, "no-store");
         headers.add(HttpHeaders.PRAGMA,"no-cache");
         headers.add("Strict-Transport-Security","max-age=63072000");
-        logger.info("{} | ********************************* START -/getName *********************************", uniqueIdentifier);
 
         Response response = new Response();
         response.setStatus("Sample Test Successful Response");
