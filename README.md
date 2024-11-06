@@ -33,7 +33,7 @@ Navigate:
 
 To package:
 
-    mvn clean install
+    mvn clean install (or) mvn clean package
 
 Running the Application: 
 
