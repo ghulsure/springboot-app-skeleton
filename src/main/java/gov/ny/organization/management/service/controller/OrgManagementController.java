@@ -33,7 +33,7 @@ public class OrgManagementController {
     public ResponseEntity<TestResponse> getCorrelationsV3(@RequestParam("x-api-token") String token,
                                                           @RequestHeader("x-api-key") String apiKey) {
         String uniqueIdentifier = "[" + UUID.randomUUID() + "]";
-        logger.info("{} | ********************************* START *********************************", uniqueIdentifier);
+        logger.info("{} | ********************************* START -/getName *********************************", uniqueIdentifier);
 
         HttpHeaders headers = new HttpHeaders();
         headers.add(HttpHeaders.CACHE_CONTROL, "no-store");
