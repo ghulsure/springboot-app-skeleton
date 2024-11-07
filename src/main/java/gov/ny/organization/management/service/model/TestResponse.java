@@ -1,10 +1,10 @@
 package gov.ny.organization.management.service.model;
 
-public class Response {
+public class TestResponse {
 
     private String status;
 
-    public Response() {
+    public TestResponse() {
     }
 
     public String getStatus() {
