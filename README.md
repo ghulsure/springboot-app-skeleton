@@ -68,3 +68,62 @@ Click on Try it out and then fill out required fields lastly click on execute to
 
 **Configuration**
 The application can be configured using the application.properties file located in the src/main/resources directory. Here you can set various properties such as the server port, database connection details, etc.
+
+
+**Git Commands**
+
+Pulling Changes
+
+To pull the latest changes from the remote repository, use the following command:
+
+    git pull origin dev
+
+Adding Files
+
+To add files to the staging area, use the following command:
+
+    git add <file-name>
+
+To add all changes, use:
+
+    git add .
+
+Committing Files
+
+To commit the staged changes, use the following command:
+
+    git commit -m "Your commit message"
+
+Pushing Changes
+
+To push your committed changes to the remote repository, use the following command:
+
+    git push origin <local branch>
+
+Merging Changes
+
+To merge changes from another branch into your current branch, use the following command:
+
+    git merge <branch-name>
+
+Resolving Conflicts
+
+If there are conflicts during a merge, Git will mark the conflicted areas in the files. Open the conflicted files and resolve the conflicts manually. After resolving the conflicts, add the resolved files to the staging area:
+
+    git add <resolved-file>
+
+Then commit the changes:
+
+    git commit -m "Resolved merge conflicts"
+
+Finally, push the resolved changes:
+
+    git push origin main
+
+Creating and Checking Out a New Branch
+
+To create a new branch from the dev branch and check it out, use the following commands:
+
+    git checkout dev   
+    git pull origin dev
+    git checkout -b <new-branch-name>
